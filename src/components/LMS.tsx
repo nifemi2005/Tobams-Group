@@ -3,7 +3,7 @@ import { ArrowUpRight } from "lucide-react"
 
 function LMS() {
     return (
-        <div className='mt-5'>
+        <div className='mt-5 md:mt-7'>
 
             {/* mobile view  */}
             <div className="flex lg:hidden flex-col justify-center items-center bg-[#5712441A] px-6">
