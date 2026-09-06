@@ -1,5 +1,6 @@
 import Hero from "@/components/Hero";
 import LMS from "@/components/LMS";
+import Management from "@/components/Management";
 import Navbar from "@/components/Navbar";
 import Services from "@/components/Services";
 
@@ -10,6 +11,7 @@ export default function Home() {
       <Hero />
       <LMS />
       <Services />
+      <Management />
     </div>
   );
 }
