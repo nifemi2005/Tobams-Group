@@ -2,13 +2,13 @@ import Image from "next/image"
 
 function CD_Services() {
     return (
-        <div className='bg-white grid md:grid-cols-2 gap-6 lg:gap-10 md:px-8 lg:px-16 items-center lg:py-10'>
+        <div className='bg-white grid md:grid-cols-2 gap-6 lg:gap-10 md:px-8 lg:px-16 items-center md:py-10'>
             <div>
                 <h1 className='font-semibold text-xl md:text-3xl lg:text-[40px] leading-normal text-[#151515] pt-6 pb-5 md:pb-0'>
                     Capacity Development
                 </h1>
                 <Image src="/images/CD_Services.jpg" alt="CD_Services" width={327} height={229} className="rounded-b-lg rounded-tl-[33px] rounded-tr-lg w-full block md:hidden object-cover" />
-                <p className="font-normal text-sm md:text-base lg:text-lg leading-normal text-[#696969] pt-5 md:pt-0">At Tobams Group, we empower individuals and organizations through tailored training programs, expert-led workshops, and personalized mentorship. We are committed to your success and growth. We are dedicated to providing a comprehensive suite of benefits designed to foster your development and success:</p>
+                <p className="font-normal text-sm lg:text-lg leading-normal text-[#696969] pt-5 md:pt-0">At Tobams Group, we empower individuals and organizations through tailored training programs, expert-led workshops, and personalized mentorship. We are committed to your success and growth. We are dedicated to providing a comprehensive suite of benefits designed to foster your development and success:</p>
                 <div className="flex flex-col gap-2 pt-5 lg:pl-10">
                     <span className="flex items-center text-[#696969] font-normal text-sm md:text-lg gap-3">
                         <Image src="/images/Zigzag.svg" alt="Zigzag" width={13} height={16} />
