@@ -2,7 +2,7 @@ import Image from "next/image"
 
 function Management() {
     return (
-        <div className='bg-[#F9F9F9] px-6 lg:p-16'>
+        <div className='bg-[#F9F9F9] px-6 pb-6 lg:p-16'>
             <div className='bg-[#2C0922] rounded-lg md:rounded-[20px] py-4 px-5 md:p-10 grid md:grid-cols-2 gap-10'>
                 <div className="relative w-full h-full hidden md:block">
                     <Image src="/images/Management.jpg" alt="Management" sizes="(min-width:768px) 50vw, 100vw" width={0} height={0} fill className="rounded-t-lg rounded-bl-lg pb-4 w-full h-auto object-cover md:block hidden" />

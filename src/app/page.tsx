@@ -1,3 +1,4 @@
+import CEO from "@/components/CEO";
 import Hero from "@/components/Hero";
 import LMS from "@/components/LMS";
 import Management from "@/components/Management";
@@ -12,6 +13,7 @@ export default function Home() {
       <LMS />
       <Services />
       <Management />
+      <CEO />
     </div>
   );
 }
