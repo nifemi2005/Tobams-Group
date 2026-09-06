@@ -1,5 +1,6 @@
 import Image from "next/image"
 import PIT_Service from "./PIT_Service"
+import CD_Services from "./CD_Services"
 
 function Services() {
     return (
@@ -39,6 +40,7 @@ function Services() {
                 </div>
             </div>
             <PIT_Service />
+            <CD_Services />
         </div>
     )
 }
