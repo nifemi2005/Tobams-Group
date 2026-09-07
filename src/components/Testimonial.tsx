@@ -60,7 +60,6 @@ function Testimonial() {
             <div
                 ref={scrollContainerRef}
                 className="flex gap-6 overflow-x-auto scroll-smooth px-6 lg:px-16 no-scrollbar pb-4"
-                style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
             >
                 {testimonials.map((item) => (
                     <div

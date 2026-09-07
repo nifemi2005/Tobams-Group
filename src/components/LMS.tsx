@@ -3,7 +3,7 @@ import { ArrowUpRight } from "lucide-react"
 
 function LMS() {
     return (
-        <div className='mt-5 md:mt-7'>
+        <section className='mt-5 md:mt-7'>
 
             {/* mobile view  */}
             <div className="flex lg:hidden flex-col justify-center items-center bg-[#5712441A] px-6">
@@ -48,7 +48,7 @@ function LMS() {
                     <button className="flex items-center gap-2 py-[10.5px] px-6 text-white bg-[#571244] font-semibold text-base leading-normal mt-7 rounded-sm cursor-pointer">Learn More <ArrowUpRight className="w-6 h-6" /></button>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 
