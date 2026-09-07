@@ -1,6 +1,7 @@
 import Booking from "@/components/Booking";
 import CEO from "@/components/CEO";
 import ConsultantSection from "@/components/ConsultantSection";
+import Footer from "@/components/Footer";
 import Get_Touch from "@/components/Get_Touch";
 import Hero from "@/components/Hero";
 import LMS from "@/components/LMS";
@@ -20,6 +21,7 @@ export default function Home() {
       <ConsultantSection />
       <Booking />
       <Get_Touch />
+      <Footer />
     </div>
   );
 }
