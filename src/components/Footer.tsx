@@ -36,7 +36,7 @@ const SolutionLinks = [
 
 function Footer() {
     return (
-        <div className='bg-[#11040E] p-6 lg:py-8 lg:px-16'>
+        <footer className='bg-[#11040E] p-6 lg:py-8 lg:px-16'>
             <div className="md:flex justify-between gap-5 lg:gap-0">
                 <div>
                     <Image src="/images/Footer_Logo.png" alt="logo" width={123.85} height={42} />
@@ -142,7 +142,7 @@ function Footer() {
                     </div>
                 </div>
             </div>
-        </div>
+        </footer>
     )
 }
 

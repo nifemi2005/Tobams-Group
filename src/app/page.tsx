@@ -8,6 +8,7 @@ import LMS from "@/components/LMS";
 import Management from "@/components/Management";
 import Navbar from "@/components/Navbar";
 import Services from "@/components/Services";
+import Testimonial from "@/components/Testimonial";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <Management />
       <CEO />
       <ConsultantSection />
+      <Testimonial />
       <Booking />
       <Get_Touch />
       <Footer />
