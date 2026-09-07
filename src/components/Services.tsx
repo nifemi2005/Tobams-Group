@@ -4,7 +4,7 @@ import CD_Services from "./CD_Services"
 
 function Services() {
     return (
-        <div className='bg-[#F9F9F9] p-6 md:p-0 md:pt-8'>
+        <section className='bg-[#F9F9F9] p-6 md:p-0 md:pt-8'>
             <div className='bg-white py-6 md:py-12 lg:py-16 grid md:grid-cols-2 gap-6 lg:gap-10 md:px-8 lg:px-16 items-center'>
                 <div>
                     <h1 className='font-semibold text-xl md:text-3xl lg:text-[40px] leading-normal text-[#151515] pb-5 md:pb-0'>
@@ -41,7 +41,7 @@ function Services() {
             </div>
             <PIT_Service />
             <CD_Services />
-        </div>
+        </section>
     )
 }
 
