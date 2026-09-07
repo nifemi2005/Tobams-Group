@@ -37,10 +37,10 @@ const SolutionLinks = [
 function Footer() {
     return (
         <div className='bg-[#11040E] p-6 lg:py-8 lg:px-16'>
-            <div className="md:flex justify-between">
+            <div className="md:flex justify-between gap-5 lg:gap-0">
                 <div>
                     <Image src="/images/Footer_Logo.png" alt="logo" width={123.85} height={42} />
-                    <p className="text-[#F8F8F8] font-normal text-sm lg:text-base leading-normal pb-6 md:w-[360px]">Tobams Group is an innovative consultancy firm reshaping the future of tech talent development in Africa, specializing in talent acquisition, internships, and skill development with a global perspective.</p>
+                    <p className="text-[#F8F8F8] font-normal text-sm lg:text-base leading-normal pb-6 md:w-[300px] lg:w-[360px]">Tobams Group is an innovative consultancy firm reshaping the future of tech talent development in Africa, specializing in talent acquisition, internships, and skill development with a global perspective.</p>
                     <div className="flex items-center gap-5">
                         <a
                             href="https://linkedin.com"
@@ -72,63 +72,35 @@ function Footer() {
                     </div>
                 </div>
                 <div className="pb-5 md:pb-0 pt-5 md:pt-0">
-                    <p className="font-bold text-lg lg:text-xl leading-normal text-white pb-4">What We Do</p>
-                    <div className="flex flex-col text-white gap-3 text-sm lg:text-base font-normal">
+                    <p className="font-bold text-lg md:text-sm lg:text-xl leading-normal text-white pb-4">What We Do</p>
+                    <div className="flex flex-col text-white gap-3 text-sm md:text-xs lg:text-base font-normal">
                         {WhatWeDoLinks.map((whatwedo) => (
                             <a href="#" key={whatwedo.name} className="cursor-pointer hover:text-gray-300 transition-colors">{whatwedo.name}</a>
                         ))}
                     </div>
                 </div>
                 <div className="pb-5 md:pb-0">
-                    <p className="font-bold text-lg lg:text-xl leading-normal text-white pb-4">Company</p>
-                    <div className="flex flex-col text-white gap-3 text-sm lg:text-base font-normal">
+                    <p className="font-bold text-lg md:text-sm lg:text-xl leading-normal text-white pb-4">Company</p>
+                    <div className="flex flex-col text-white gap-3 text-sm md:text-xs lg:text-base font-normal">
                         {CompanyLinks.map((company) => (
                             <a href="#" key={company.name} className="cursor-pointer hover:text-gray-300 transition-colors">{company.name}</a>
                         ))}
                     </div>
                 </div>
                 <div className="pb-5 md:pb-0">
-                    <p className="font-bold text-lg lg:text-xl leading-normal text-white pb-4">Solution</p>
-                    <div className="flex flex-col text-white gap-3 text-sm lg:text-base font-normal">
+                    <p className="font-bold text-lg md:text-sm lg:text-xl leading-normal text-white pb-4">Solution</p>
+                    <div className="flex flex-col text-white gap-3 text-sm md:text-xs lg:text-base font-normal">
                         {SolutionLinks.map((solution) => (
                             <a href="#" key={solution.name} className="cursor-pointer hover:text-gray-300 transition-colors">{solution.name}</a>
                         ))}
                     </div>
                 </div>
-
-
-                {/* <div className="flex flex-col md:flex-row justify-between gap-5 pt-5 pb-3">
-                    <div>
-                        <p className="font-bold text-lg leading-normal text-white pb-4">What We Do</p>
-                        <div className="flex flex-col text-white gap-3 text-sm font-normal">
-                            {WhatWeDoLinks.map((whatwedo) => (
-                                <a href="#" key={whatwedo.name} className="cursor-pointer hover:text-gray-300 transition-colors">{whatwedo.name}</a>
-                            ))}
-                        </div>
-                    </div>
-                    <div>
-                        <p className="font-bold text-lg leading-normal text-white pb-4">Company</p>
-                        <div className="flex flex-col text-white gap-3 text-sm font-normal">
-                            {CompanyLinks.map((company) => (
-                                <a href="#" key={company.name} className="cursor-pointer hover:text-gray-300 transition-colors">{company.name}</a>
-                            ))}
-                        </div>
-                    </div>
-                    <div>
-                        <p className="font-bold text-lg leading-normal text-white pb-4">Solution</p>
-                        <div className="flex flex-col text-white gap-3 text-sm font-normal">
-                            {SolutionLinks.map((solution) => (
-                                <a href="#" key={solution.name} className="cursor-pointer hover:text-gray-300 transition-colors">{solution.name}</a>
-                            ))}
-                        </div>
-                    </div>
-                </div> */}
             </div>
 
             <div className='block md:hidden bg-[#DDD0DA] border-b border-[#DDD0DA]'></div>
 
             <div className="bg-[#FFFFFF0F] p-4 lg:p-6 mt-5 lg:mt-10 mb-8 rounded-lg md:flex md:flex-row-reverse items-center">
-                <div className="border-l border-white/10 pl-6">
+                <div className="lg:border-l border-white/10 lg:pl-6">
                     <h2 className="font-bold text-lg text-white leading-normal pb-2.5">Contact Information</h2>
                     <div className="text-white flex flex-col gap-2.5 pb-6">
                         <a href="mailto:theteam@tobamsgroup.com" className="text-sm font-normal leading-normal flex items-center gap-2.5 hover:underline">
@@ -143,9 +115,8 @@ function Footer() {
                 </div>
                 <div>
                     <h2 className="font-bold text-lg text-white leading-normal pb-2.5">Registered Offices</h2>
-                    <div className="flex flex-col divide-x divide-white/10 lg:flex-row gap-10">
+                    <div className="flex flex-col lg:divide-x divide-white/10 lg:flex-row gap-10">
                         <p className="text-white text-sm lg:text-base font-normal leading-normal lg:pr-6"><span className="text-[#EF4353]">United Kingdom</span> <br /> 07451196 (Registered by Company House) <br className="hidden lg:block" /> Vine Cottages, 215 North Street, Romford, Essex, United Kingdom, RM1 4QA</p>
-                        {/* <div className="w-full h-[1px] bg-[#DDD0DA]/30 my-4" /> */}
                         <p className="text-white text-sm  lg:text-base font-normal leading-normal lg:pr-6"><span className="text-[#EF4353]">Nigeria</span> <br />
                             RC 1048722 (Registered by the Corporate Affairs Commission)
                             4, Muaz Close, Angwari-Rimi
@@ -156,13 +127,20 @@ function Footer() {
 
             <div className='bg-[#DDD0DA] border-b border-[#DDD0DA]'></div>
 
-            <div className="pt-6 pb-2 flex flex-col items-center text-center gap-3.5">
-                <div className="flex items-center gap-6 text-sm text-white font-light">
-                    <a href="#" className="underline cursor-pointer hover:text-gray-300 transition-colors">Privacy Policy</a>
-                    <a href="#" className="underline cursor-pointer hover:text-gray-300 transition-colors">Cookies Policy</a>
+            <div className="pt-6 pb-2 flex flex-col-reverse md:flex-row justify-between items-center text-center md:text-left gap-4">
+                <p className="text-white font-light text-sm lg:text-base">
+                    Copyright &copy; Tobams Group, 2024. All rights reserved.
+                </p>
+
+                <div className="flex md:flex-row-reverse flex-wrap justify-center items-center gap-6 lg:gap-8 text-sm lg:text-base text-white font-light">
+                    <div className="flex flex-wrap justify-center items-center gap-6 lg:gap-8">
+                        <a href="#" className="underline cursor-pointer hover:text-gray-300 transition-colors">Privacy Policy</a>
+                        <a href="#" className="underline cursor-pointer hover:text-gray-300 transition-colors">Cookies Policy</a>
+                    </div>
+                    <div>
+                        <a href="#" className="underline cursor-pointer hover:text-gray-300 transition-colors">Terms and Conditions</a>
+                    </div>
                 </div>
-                <a href="#" className="underline font-light text-sm text-white cursor-pointer hover:text-gray-300 transition-colors">Terms and Conditions</a>
-                <p className="text-white font-light text-sm mt-2">Copyright &copy; Tobams Group, 2024. All rights reserved.</p>
             </div>
         </div>
     )
