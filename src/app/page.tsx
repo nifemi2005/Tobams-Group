@@ -1,4 +1,7 @@
+import Booking from "@/components/Booking";
 import CEO from "@/components/CEO";
+import ConsultantSection from "@/components/ConsultantSection";
+import Get_Touch from "@/components/Get_Touch";
 import Hero from "@/components/Hero";
 import LMS from "@/components/LMS";
 import Management from "@/components/Management";
@@ -14,6 +17,9 @@ export default function Home() {
       <Services />
       <Management />
       <CEO />
+      <ConsultantSection />
+      <Booking />
+      <Get_Touch />
     </div>
   );
 }
