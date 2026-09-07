@@ -12,7 +12,7 @@ const skills = [
 
 function CEO() {
     return (
-        <div className='bg-white p-6'>
+        <section className='bg-white p-6'>
             <div className='bg-[#EF435333] py-6 px-4 lg:p-10 rounded-2xl'>
                 <h1 className='text-[#1671D9] text-sm md:text-xl font-semibold pb-2'>Learning With Our CEO:</h1>
                 <h2 className='text-[#571244] text-xl md:text-[32px] font-semibold italic pb-3'>Transformation Hub With Jite Newton</h2>
@@ -40,7 +40,7 @@ function CEO() {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 
