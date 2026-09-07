@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { FaLinkedinIn, FaXTwitter } from 'react-icons/fa6'
+import { FaLinkedinIn, FaXTwitter, FaEnvelope, FaPhone } from 'react-icons/fa6'
 import { FaInstagram } from "react-icons/fa"
 
 const WhatWeDoLinks = [
@@ -36,80 +36,117 @@ const SolutionLinks = [
 
 function Footer() {
     return (
-        <div className='bg-[#11040E] p-6'>
-            <Image src="/images/Footer_Logo.png" alt="logo" width={123.85} height={42} />
-            <p className="text-[#F8F8F8] font-normal text-sm leading-normal">Tobams Group is an innovative consultancy firm reshaping the future of tech talent development in Africa, specializing in talent acquisition, internships, and skill development with a global perspective.</p>
-            <div className="flex items-center gap-5">
-                <a
-                    href="https://linkedin.com"
-                    target="_blank"
-                    rel="noreferrer"
-                    aria-label="LinkedIn"
-                    className="w-8 h-8 rounded-full bg-white flex items-center justify-center text-[#151515] hover:opacity-85 transition-opacity"
-                >
-                    <FaLinkedinIn size={15} />
-                </a>
-                <a
-                    href="https://instagram.com"
-                    target="_blank"
-                    rel="noreferrer"
-                    aria-label="Instagram"
-                    className="w-8 h-8 rounded-full bg-white flex items-center justify-center text-[#151515] hover:opacity-85 transition-opacity"
-                >
-                    <FaInstagram size={16} />
-                </a>
-                <a
-                    href="https://x.com"
-                    target="_blank"
-                    rel="noreferrer"
-                    aria-label="X (Twitter)"
-                    className="w-8 h-8 rounded-full bg-white flex items-center justify-center text-[#151515] hover:opacity-85 transition-opacity"
-                >
-                    <FaXTwitter size={14} />
-                </a>
-            </div>
-            <div className="flex flex-col gap-5 pt-5 pb-3">
+        <div className='bg-[#11040E] p-6 lg:py-8 lg:px-16'>
+            <div className="md:flex justify-between">
                 <div>
-                    <p className="font-bold text-lg leading-normal text-white pb-4">What We Do</p>
-                    <div className="flex flex-col text-white gap-3 text-sm font-normal">
+                    <Image src="/images/Footer_Logo.png" alt="logo" width={123.85} height={42} />
+                    <p className="text-[#F8F8F8] font-normal text-sm lg:text-base leading-normal pb-6 md:w-[360px]">Tobams Group is an innovative consultancy firm reshaping the future of tech talent development in Africa, specializing in talent acquisition, internships, and skill development with a global perspective.</p>
+                    <div className="flex items-center gap-5">
+                        <a
+                            href="https://linkedin.com"
+                            target="_blank"
+                            rel="noreferrer"
+                            aria-label="LinkedIn"
+                            className="w-8 h-8 rounded-full bg-white flex items-center justify-center text-[#151515] hover:opacity-85 transition-opacity"
+                        >
+                            <FaLinkedinIn size={15} />
+                        </a>
+                        <a
+                            href="https://instagram.com"
+                            target="_blank"
+                            rel="noreferrer"
+                            aria-label="Instagram"
+                            className="w-8 h-8 rounded-full bg-white flex items-center justify-center text-[#151515] hover:opacity-85 transition-opacity"
+                        >
+                            <FaInstagram size={16} />
+                        </a>
+                        <a
+                            href="https://x.com"
+                            target="_blank"
+                            rel="noreferrer"
+                            aria-label="X (Twitter)"
+                            className="w-8 h-8 rounded-full bg-white flex items-center justify-center text-[#151515] hover:opacity-85 transition-opacity"
+                        >
+                            <FaXTwitter size={14} />
+                        </a>
+                    </div>
+                </div>
+                <div className="pb-5 md:pb-0 pt-5 md:pt-0">
+                    <p className="font-bold text-lg lg:text-xl leading-normal text-white pb-4">What We Do</p>
+                    <div className="flex flex-col text-white gap-3 text-sm lg:text-base font-normal">
                         {WhatWeDoLinks.map((whatwedo) => (
                             <a href="#" key={whatwedo.name} className="cursor-pointer hover:text-gray-300 transition-colors">{whatwedo.name}</a>
                         ))}
                     </div>
                 </div>
-                <div>
-                    <p className="font-bold text-lg leading-normal text-white pb-4">Company</p>
-                    <div className="flex flex-col text-white gap-3 text-sm font-normal">
+                <div className="pb-5 md:pb-0">
+                    <p className="font-bold text-lg lg:text-xl leading-normal text-white pb-4">Company</p>
+                    <div className="flex flex-col text-white gap-3 text-sm lg:text-base font-normal">
                         {CompanyLinks.map((company) => (
                             <a href="#" key={company.name} className="cursor-pointer hover:text-gray-300 transition-colors">{company.name}</a>
                         ))}
                     </div>
                 </div>
-                <div>
-                    <p className="font-bold text-lg leading-normal text-white pb-4">Solution</p>
-                    <div className="flex flex-col text-white gap-3 text-sm font-normal">
+                <div className="pb-5 md:pb-0">
+                    <p className="font-bold text-lg lg:text-xl leading-normal text-white pb-4">Solution</p>
+                    <div className="flex flex-col text-white gap-3 text-sm lg:text-base font-normal">
                         {SolutionLinks.map((solution) => (
                             <a href="#" key={solution.name} className="cursor-pointer hover:text-gray-300 transition-colors">{solution.name}</a>
                         ))}
                     </div>
                 </div>
+
+
+                {/* <div className="flex flex-col md:flex-row justify-between gap-5 pt-5 pb-3">
+                    <div>
+                        <p className="font-bold text-lg leading-normal text-white pb-4">What We Do</p>
+                        <div className="flex flex-col text-white gap-3 text-sm font-normal">
+                            {WhatWeDoLinks.map((whatwedo) => (
+                                <a href="#" key={whatwedo.name} className="cursor-pointer hover:text-gray-300 transition-colors">{whatwedo.name}</a>
+                            ))}
+                        </div>
+                    </div>
+                    <div>
+                        <p className="font-bold text-lg leading-normal text-white pb-4">Company</p>
+                        <div className="flex flex-col text-white gap-3 text-sm font-normal">
+                            {CompanyLinks.map((company) => (
+                                <a href="#" key={company.name} className="cursor-pointer hover:text-gray-300 transition-colors">{company.name}</a>
+                            ))}
+                        </div>
+                    </div>
+                    <div>
+                        <p className="font-bold text-lg leading-normal text-white pb-4">Solution</p>
+                        <div className="flex flex-col text-white gap-3 text-sm font-normal">
+                            {SolutionLinks.map((solution) => (
+                                <a href="#" key={solution.name} className="cursor-pointer hover:text-gray-300 transition-colors">{solution.name}</a>
+                            ))}
+                        </div>
+                    </div>
+                </div> */}
             </div>
 
-            <div className='bg-[#DDD0DA] border-b border-[#DDD0DA]'></div>
+            <div className='block md:hidden bg-[#DDD0DA] border-b border-[#DDD0DA]'></div>
 
-            <div className="bg-[#FFFFFF0F] p-4 mt-5 mb-8 rounded-lg">
-                <div>
+            <div className="bg-[#FFFFFF0F] p-4 lg:p-6 mt-5 lg:mt-10 mb-8 rounded-lg md:flex md:flex-row-reverse items-center">
+                <div className="border-l border-white/10 pl-6">
                     <h2 className="font-bold text-lg text-white leading-normal pb-2.5">Contact Information</h2>
-                    <div className="text-white flex flex-col gap-2.5">
-                        <a href="mailto:theteam@tobamsgroup.com" className="text-sm font-normal leading-normal">theteam@tobamsgroup.com</a>
-                        <a href="tel:+447886600748" className="text-sm font-normal leading-normal">+447886600748</a>
+                    <div className="text-white flex flex-col gap-2.5 pb-6">
+                        <a href="mailto:theteam@tobamsgroup.com" className="text-sm font-normal leading-normal flex items-center gap-2.5 hover:underline">
+                            <FaEnvelope className="text-[#EF4353]" size={16} />
+                            <span>theteam@tobamsgroup.com</span>
+                        </a>
+                        <a href="tel:+447886600748" className="text-sm font-normal leading-normal flex items-center gap-2.5 hover:underline">
+                            <FaPhone className="text-[#EF4353]" size={15} />
+                            <span>+447886600748</span>
+                        </a>
                     </div>
                 </div>
                 <div>
                     <h2 className="font-bold text-lg text-white leading-normal pb-2.5">Registered Offices</h2>
-                    <div className="flex flex-col gap-10">
-                        <p className="text-white text-base font-normal leading-normal"><span className="text-[#EF4353]">United Kingdom</span> <br /> 07451196 (Registered by Company House) Vine Cottages, 215 North Street, Romford, Essex, United Kingdom, RM1 4QA</p>
-                        <p className="text-white text-base font-normal leading-normal"><span className="text-[#EF4353]">Nigeria</span> <br />
+                    <div className="flex flex-col divide-x divide-white/10 lg:flex-row gap-10">
+                        <p className="text-white text-sm lg:text-base font-normal leading-normal lg:pr-6"><span className="text-[#EF4353]">United Kingdom</span> <br /> 07451196 (Registered by Company House) <br className="hidden lg:block" /> Vine Cottages, 215 North Street, Romford, Essex, United Kingdom, RM1 4QA</p>
+                        {/* <div className="w-full h-[1px] bg-[#DDD0DA]/30 my-4" /> */}
+                        <p className="text-white text-sm  lg:text-base font-normal leading-normal lg:pr-6"><span className="text-[#EF4353]">Nigeria</span> <br />
                             RC 1048722 (Registered by the Corporate Affairs Commission)
                             4, Muaz Close, Angwari-Rimi
                         </p>
