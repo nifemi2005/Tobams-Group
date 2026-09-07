@@ -97,13 +97,35 @@ function Footer() {
 
             <div className='bg-[#DDD0DA] border-b border-[#DDD0DA]'></div>
 
-            <div className="bg-[#FFFFFF0F] p-4 mt-5 rounded-lg">
-                <h2 className="font-bold text-lg text-white leading-normal pb-2.5">Contact Information</h2>
-                <div className="text-white flex flex-col gap-2.5">
-                    <a href="mailto:theteam@tobamsgroup.com" className="text-sm font-normal leading-normal">theteam@tobamsgroup.com</a>
-                    <a href="tel:+447886600748" className="text-sm font-normal leading-normal">+447886600748</a>
+            <div className="bg-[#FFFFFF0F] p-4 mt-5 mb-8 rounded-lg">
+                <div>
+                    <h2 className="font-bold text-lg text-white leading-normal pb-2.5">Contact Information</h2>
+                    <div className="text-white flex flex-col gap-2.5">
+                        <a href="mailto:theteam@tobamsgroup.com" className="text-sm font-normal leading-normal">theteam@tobamsgroup.com</a>
+                        <a href="tel:+447886600748" className="text-sm font-normal leading-normal">+447886600748</a>
+                    </div>
                 </div>
+                <div>
+                    <h2 className="font-bold text-lg text-white leading-normal pb-2.5">Registered Offices</h2>
+                    <div className="flex flex-col gap-10">
+                        <p className="text-white text-base font-normal leading-normal"><span className="text-[#EF4353]">United Kingdom</span> <br /> 07451196 (Registered by Company House) Vine Cottages, 215 North Street, Romford, Essex, United Kingdom, RM1 4QA</p>
+                        <p className="text-white text-base font-normal leading-normal"><span className="text-[#EF4353]">Nigeria</span> <br />
+                            RC 1048722 (Registered by the Corporate Affairs Commission)
+                            4, Muaz Close, Angwari-Rimi
+                        </p>
+                    </div>
+                </div>
+            </div>
 
+            <div className='bg-[#DDD0DA] border-b border-[#DDD0DA]'></div>
+
+            <div className="pt-6 pb-2 flex flex-col items-center text-center gap-3.5">
+                <div className="flex items-center gap-6 text-sm text-white font-light">
+                    <a href="#" className="underline cursor-pointer hover:text-gray-300 transition-colors">Privacy Policy</a>
+                    <a href="#" className="underline cursor-pointer hover:text-gray-300 transition-colors">Cookies Policy</a>
+                </div>
+                <a href="#" className="underline font-light text-sm text-white cursor-pointer hover:text-gray-300 transition-colors">Terms and Conditions</a>
+                <p className="text-white font-light text-sm mt-2">Copyright &copy; Tobams Group, 2024. All rights reserved.</p>
             </div>
         </div>
     )
