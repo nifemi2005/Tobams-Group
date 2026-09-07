@@ -97,3 +97,9 @@ npm run start
 - **Placeholder Navigation Links**: Secondary header navigation and footer links point to anchor identifiers or placeholder `#` links, as this assessment specifically focuses on the single landing page implementation.
 - **Form Submissions**: Interactive buttons (such as "Book a Consultation", "Take Assessment", and contact buttons) currently serve as UI demonstrations and are not yet tied to a live backend endpoint or CRM API.
 - **Social Media Outlets**: Social media icons in the footer are wired to placeholder URLs pending official organization handle confirmation.
+
+---
+
+## AI Tools Disclosure
+
+In accordance with the assessment submission requirements, AI coding assistance (Antigravity) was utilized during development to pair program, refine responsive Tailwind CSS calculations, perform semantic audits, and resolve layout and merge conflicts. All architectural structures, design implementations, and code deliverables were verified and aligned with the provided Figma designs.

@@ -2,7 +2,7 @@ import React from 'react'
 
 function Booking() {
     return (
-        <div className='bg-[#F9F9F9] py-8 px-6'>
+        <section className='bg-[#F9F9F9] py-8 px-6'>
             <div className='lg:w-[80%] lg:mx-auto'>
                 <div className='bg-[#571244] rounded-lg py-8 px-16 flex flex-col justify-center items-center'>
                     <p className='text-[#FFFFFF] font-semibold text-xl text-center pb-7 md:w-[756px] hidden md:block md:px-5 lg:px-0'>Want to accelerate professional growth and development at your organisation? See how we can help.</p>
@@ -10,7 +10,7 @@ function Booking() {
                     <button className='bg-white rounded-sm py-3 px-6 text-[#571244] leading-normal font-semibold text-sm md:text-lg cursor-pointer'>Book a Consultation</button>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

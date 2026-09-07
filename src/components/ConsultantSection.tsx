@@ -1,9 +1,9 @@
-import { ArrowRight, ArrowUpRight } from 'lucide-react'
+import { ArrowUpRight } from 'lucide-react'
 import React from 'react'
 
 function ConsultantSection() {
     return (
-        <div className='bg-[#F9F9F9] pt-8'>
+        <section className='bg-[#F9F9F9] pt-8'>
             <div className='bg-[#5712441A] p-6 lg:py-12 lg:px-16'>
                 <h1 className='text-[#571244] text-2xl lg:text-[40px] font-semibold'>Training The Consultant</h1>
                 <h2 className='text-[#571244] text-base md:text-xl font-semibold leading-normal py-5'>Maximize Your Potential as a Certified Trainer:</h2>
@@ -28,7 +28,7 @@ function ConsultantSection() {
                 </div>
                 <button className='cursor-pointer rounded-lg py-3 px-6 bg-[#571244] text-white font-semibold text-sm leading-normal mt-7 flex gap-3 items-center'>Learn More <ArrowUpRight className='w-6 h-6' /> </button>
             </div>
-        </div>
+        </section>
     )
 }
 
