@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import heroBg from '@/public/hero-bg.jpg';
+
 function Hero() {
     return (
         <section className="relative w-full min-h-90 lg:min-h-[80vh] flex items-center overflow-hidden">
