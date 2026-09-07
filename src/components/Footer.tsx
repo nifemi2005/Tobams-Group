@@ -40,7 +40,9 @@ function Footer() {
             <div className="md:flex justify-between gap-5 lg:gap-0">
                 <div>
                     <Image src="/images/Footer_Logo.png" alt="logo" width={123.85} height={42} />
-                    <p className="text-[#F8F8F8] font-normal text-sm lg:text-base leading-normal pb-6 md:w-[300px] lg:w-[360px]">Tobams Group is an innovative consultancy firm reshaping the future of tech talent development in Africa, specializing in talent acquisition, internships, and skill development with a global perspective.</p>
+                    <p className="text-[#F8F8F8] font-normal text-sm lg:text-base leading-normal pb-6 md:w-[300px] lg:w-[360px]">
+                        Tobams Group is an innovative consultancy firm reshaping the future of tech talent development in Africa, specializing in talent acquisition, internships, and skill development with a global perspective.
+                    </p>
                     <div className="flex items-center gap-5">
                         <a
                             href="https://linkedin.com"
@@ -71,38 +73,47 @@ function Footer() {
                         </a>
                     </div>
                 </div>
+
                 <div className="pb-5 md:pb-0 pt-5 md:pt-0">
                     <p className="font-bold text-lg md:text-sm lg:text-xl leading-normal text-white pb-4">What We Do</p>
                     <div className="flex flex-col text-white gap-3 text-sm md:text-xs lg:text-base font-normal">
                         {WhatWeDoLinks.map((whatwedo) => (
-                            <a href="#" key={whatwedo.name} className="cursor-pointer hover:text-gray-300 transition-colors">{whatwedo.name}</a>
+                            <a href="#" key={whatwedo.name} className="cursor-pointer hover:text-gray-300 transition-colors">
+                                {whatwedo.name}
+                            </a>
                         ))}
                     </div>
                 </div>
+
                 <div className="pb-5 md:pb-0">
                     <p className="font-bold text-lg md:text-sm lg:text-xl leading-normal text-white pb-4">Company</p>
                     <div className="flex flex-col text-white gap-3 text-sm md:text-xs lg:text-base font-normal">
                         {CompanyLinks.map((company) => (
-                            <a href="#" key={company.name} className="cursor-pointer hover:text-gray-300 transition-colors">{company.name}</a>
+                            <a href="#" key={company.name} className="cursor-pointer hover:text-gray-300 transition-colors">
+                                {company.name}
+                            </a>
                         ))}
                     </div>
                 </div>
+
                 <div className="pb-5 md:pb-0">
                     <p className="font-bold text-lg md:text-sm lg:text-xl leading-normal text-white pb-4">Solution</p>
                     <div className="flex flex-col text-white gap-3 text-sm md:text-xs lg:text-base font-normal">
                         {SolutionLinks.map((solution) => (
-                            <a href="#" key={solution.name} className="cursor-pointer hover:text-gray-300 transition-colors">{solution.name}</a>
+                            <a href="#" key={solution.name} className="cursor-pointer hover:text-gray-300 transition-colors">
+                                {solution.name}
+                            </a>
                         ))}
                     </div>
                 </div>
             </div>
 
-            <div className='block md:hidden bg-[#DDD0DA] border-b border-[#DDD0DA]'></div>
+            <div className='block md:hidden bg-[#DDD0DA] border-b border-[#DDD0DA] my-6'></div>
 
-            <div className="bg-[#FFFFFF0F] p-4 lg:p-6 mt-5 lg:mt-10 mb-8 rounded-lg md:flex md:flex-row-reverse items-center">
+            <div className="bg-[#FFFFFF0F] p-4 lg:p-6 mt-5 lg:mt-10 mb-8 rounded-lg md:flex md:flex-row-reverse items-center justify-between">
                 <div className="lg:border-l border-white/10 lg:pl-6">
                     <h2 className="font-bold text-lg text-white leading-normal pb-2.5">Contact Information</h2>
-                    <div className="text-white flex flex-col gap-2.5 pb-6">
+                    <div className="text-white flex flex-col gap-2.5 pb-6 md:pb-0">
                         <a href="mailto:theteam@tobamsgroup.com" className="text-sm font-normal leading-normal flex items-center gap-2.5 hover:underline">
                             <FaEnvelope className="text-[#EF4353]" size={16} />
                             <span>theteam@tobamsgroup.com</span>
@@ -116,9 +127,14 @@ function Footer() {
                 <div>
                     <h2 className="font-bold text-lg text-white leading-normal pb-2.5">Registered Offices</h2>
                     <div className="flex flex-col lg:divide-x divide-white/10 lg:flex-row gap-10">
-                        <p className="text-white text-sm lg:text-base font-normal leading-normal lg:pr-6"><span className="text-[#EF4353]">United Kingdom</span> <br /> 07451196 (Registered by Company House) <br className="hidden lg:block" /> Vine Cottages, 215 North Street, Romford, Essex, United Kingdom, RM1 4QA</p>
-                        <p className="text-white text-sm  lg:text-base font-normal leading-normal lg:pr-6"><span className="text-[#EF4353]">Nigeria</span> <br />
-                            RC 1048722 (Registered by the Corporate Affairs Commission)
+                        <p className="text-white text-sm lg:text-base font-normal leading-normal lg:pr-6">
+                            <span className="text-[#EF4353]">United Kingdom</span> <br />
+                            07451196 (Registered by Company House) <br className="hidden lg:block" />
+                            Vine Cottages, 215 North Street, Romford, Essex, United Kingdom, RM1 4QA
+                        </p>
+                        <p className="text-white text-sm lg:text-base font-normal leading-normal lg:pr-6">
+                            <span className="text-[#EF4353]">Nigeria</span> <br />
+                            RC 1048722 (Registered by the Corporate Affairs Commission) <br className="hidden lg:block" />
                             4, Muaz Close, Angwari-Rimi
                         </p>
                     </div>
