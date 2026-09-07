@@ -4,14 +4,14 @@ A responsive, pixel-accurate landing page implementation built for the **Tobams 
 
 ---
 
-## 🔗 Project Links
+## Project Links
 
 - **Live URL:** [https://tobamsgroup01.netlify.app/](https://tobamsgroup01.netlify.app/)
 - **Figma Design:** [Frontend Intern Assessment on Figma](https://www.figma.com/design/wuqCLkK1feTgB6xxSRRwZu/Frontend-Intern-Assessment?node-id=0-1&p=f&t=2XhbA4uoY2Tf4fgY-0)
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Framework:** [Next.js 16.3.4](https://nextjs.org/) (App Router, Turbopack)
 - **Library:** [React 19](https://react.dev/)
@@ -22,7 +22,7 @@ A responsive, pixel-accurate landing page implementation built for the **Tobams 
 
 ---
 
-## 🚀 Getting Started & Setup Steps
+## Getting Started & Setup Steps
 
 ### Prerequisites
 Make sure you have **Node.js** (version 18.18 or later) and **npm** installed on your machine.
@@ -61,7 +61,7 @@ npm run start
 
 ---
 
-## 💡 Design & Architectural Decisions
+## Design & Architectural Decisions
 
 1. **Pixel & Token Fidelity to Figma**:
    - **Color Palette**: Rigorously implemented brand colors including `#571244` (primary deep plum), `#EF4353` (accent coral), `#151515` (primary dark text), `#696969` (secondary text), and `#11040E` (footer background).
@@ -92,7 +92,7 @@ npm run start
 
 ---
 
-## ⚠️ Known Issues & Limitations
+## Known Issues & Limitations
 
 - **Placeholder Navigation Links**: Secondary header navigation and footer links point to anchor identifiers or placeholder `#` links, as this assessment specifically focuses on the single landing page implementation.
 - **Form Submissions**: Interactive buttons (such as "Book a Consultation", "Take Assessment", and contact buttons) currently serve as UI demonstrations and are not yet tied to a live backend endpoint or CRM API.
